@@ -1,0 +1,76 @@
+Task B - Face Recognition Dataset Statistics:
+
+Train Set:
+    Total identities       : 877
+    Total original images  : 1926
+    Total distorted images : 13482
+    Total all images       : 15408
+
+Val Set:
+    Total identities       : 250
+    Total original images  : 422
+    Total distorted images : 2954
+    Total all images       : 3376
+
+Building structured data dictionary for Task B...
+
+Data structure build complete!
+Total Task B training identities : 877
+Total Task B validation identities : 250
+
+Starting training...
+
+Epoch 1/15:
+Loss: 0.0112 | PosDist: 0.5655 | NegDist: 1.3535
+
+Epoch 2/15:
+Loss: 0.0020 | PosDist: 0.4995 | NegDist: 1.3788
+
+Epoch 3/15:
+Loss: 0.0016 | PosDist: 0.4891 | NegDist: 1.3771
+Validation Metrics: Acc=0.8839 | Prec=0.8823 | Recall=0.8858 | Macro-F1=0.8832 @ Thresh=0.80
+Saved checkpoint: FMM_ep3_f1_0.8832.pth
+
+Epoch 4/15:
+Loss: 0.0016 | PosDist: 0.4854 | NegDist: 1.3766
+
+Epoch 5/15:
+Loss: 0.0013 | PosDist: 0.4760 | NegDist: 1.3811
+
+Epoch 6/15:
+Loss: 0.0009 | PosDist: 0.4680 | NegDist: 1.3827
+Validation Metrics: Acc=0.8541 | Prec=0.8529 | Recall=0.8563 | Macro-F1=0.8535 @ Thresh=0.80
+Saved checkpoint: FMM_ep6_f1_0.8535.pth
+
+Epoch 7/15:
+Loss: 0.0010 | PosDist: 0.4614 | NegDist: 1.3797
+
+Epoch 8/15:
+Loss: 0.0009 | PosDist: 0.4566 | NegDist: 1.3749
+
+Epoch 9/15:
+Loss: 0.0008 | PosDist: 0.4600 | NegDist: 1.3823
+Validation Metrics: Acc=0.8734 | Prec=0.8707 | Recall=0.8677 | Macro-F1=0.8691 @ Thresh=0.75
+Saved checkpoint: FMM_ep9_f1_0.8691.pth
+
+Epoch 10/15:
+Loss: 0.0007 | PosDist: 0.4550 | NegDist: 1.3838
+
+Epoch 11/15:
+Loss: 0.0006 | PosDist: 0.4556 | NegDist: 1.3863
+
+Epoch 12/15:
+Loss: 0.0006 | PosDist: 0.4492 | NegDist: 1.3845
+Validation Metrics: Acc=0.8805 | Prec=0.8830 | Recall=0.8843 | Macro-F1=0.8805 @ Thresh=0.80
+Saved checkpoint: FMM_ep12_f1_0.8805.pth
+
+Epoch 13/15:
+Loss: 0.0005 | PosDist: 0.4489 | NegDist: 1.3857
+
+Epoch 14/15:
+Loss: 0.0004 | PosDist: 0.4459 | NegDist: 1.3846
+
+Epoch 15/15:
+Loss: 0.0004 | PosDist: 0.4467 | NegDist: 1.3852
+Validation Metrics: Acc=0.8695 | Prec=0.8744 | Recall=0.8678 | Macro-F1=0.8703 @ Thresh=0.80
+Saved checkpoint: FMM_ep15_f1_0.8703.pth

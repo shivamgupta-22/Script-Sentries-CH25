@@ -1,0 +1,16 @@
+# [ eval_gender_t_v.py | TRAIN SET | 2025-07-03 16:48:13.533998 ]
+Accuracy            : 0.9979
+Precision           : 0.9899
+Recall              : 1.0000
+F1-Score            : 0.9949
+Correct Predictions : 1922/1926
+Wrong Predictions   : 4/1926
+
+# [ eval_gender_t_v.py | VALIDATION SET | 2025-07-03 16:48:36.525732 ]
+Accuracy            : 0.9787
+Precision           : 0.9444
+Recall              : 0.9714
+F1-Score            : 0.9577
+Correct Predictions : 413/422
+Wrong Predictions   : 9/422
+

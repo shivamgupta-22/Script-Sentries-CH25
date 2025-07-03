@@ -1,0 +1,14 @@
+# [ eval_face_t_v.py | TRAIN SET | 2025-07-03 08:04:21.878514 ]
+Top-1 Accuracy      : 0.8583
+Macro-averaged F1   : 0.8538
+Precision           : 0.8595
+Recall              : 0.8504
+Threshold Used      : 0.80
+
+# [ eval_face_t_v.py | VAL SET | 2025-07-03 08:06:34.232205 ]
+Top-1 Accuracy      : 0.8839
+Macro-averaged F1   : 0.8832
+Precision           : 0.8823
+Recall              : 0.8858
+Threshold Used      : 0.80
+

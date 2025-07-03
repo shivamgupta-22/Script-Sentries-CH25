@@ -1,0 +1,133 @@
+Dataset Statistics:
+
+Train:
+    Male images   : 1532
+    Female images : 394
+    Total images  : 1926
+
+Validation:
+    Male images   : 317
+    Female images : 105
+    Total images  : 422
+
+Starting training...
+
+Epoch 1:
+Train -> Loss: 0.5619 | Acc: 0.8967 | F1: 0.7628
+Val   -> Loss: 0.2391 | Acc: 0.9336 | F1: 0.8793
+Save model as ep1_f1_0.8793.pth? (y/n): n
+Model not saved for this epoch.
+
+Epoch 2:
+Train -> Loss: 0.1476 | Acc: 0.9616 | F1: 0.9131
+Val   -> Loss: 0.1841 | Acc: 0.9668 | F1: 0.9327
+Save model as ep2_f1_0.9327.pth? (y/n): n
+Model not saved for this epoch.
+
+Epoch 3:
+Train -> Loss: 0.0729 | Acc: 0.9818 | F1: 0.9572
+Val   -> Loss: 0.1743 | Acc: 0.9787 | F1: 0.9561
+Save model as ep3_f1_0.9561.pth? (y/n): y
+Model saved as GCM_ep3_f1_0.9561.pth
+
+Epoch 4:
+Train -> Loss: 0.0308 | Acc: 0.9958 | F1: 0.9899
+Val   -> Loss: 0.1287 | Acc: 0.9787 | F1: 0.9577
+Save model as ep4_f1_0.9577.pth? (y/n): y
+Model saved as GCM_ep4_f1_0.9577.pth
+
+Epoch 5:
+Train -> Loss: 0.0276 | Acc: 0.9927 | F1: 0.9825
+Val   -> Loss: 0.1595 | Acc: 0.9787 | F1: 0.9565
+Save model as ep5_f1_0.9565.pth? (y/n): n
+Model not saved for this epoch.
+
+Epoch 6:
+Train -> Loss: 0.0674 | Acc: 0.9870 | F1: 0.9689
+Val   -> Loss: 0.1254 | Acc: 0.9763 | F1: 0.9528
+Save model as ep6_f1_0.9528.pth? (y/n): n
+Model not saved for this epoch.
+
+Epoch 7:
+Train -> Loss: 0.0544 | Acc: 0.9829 | F1: 0.9595
+Val   -> Loss: 0.3070 | Acc: 0.9479 | F1: 0.8972
+Save model as ep7_f1_0.8972.pth? (y/n): n
+Model not saved for this epoch.
+
+Epoch 8:
+Train -> Loss: 0.0288 | Acc: 0.9933 | F1: 0.9837
+Val   -> Loss: 0.2153 | Acc: 0.9621 | F1: 0.9252
+Save model as ep8_f1_0.9252.pth? (y/n): n
+Model not saved for this epoch.
+
+Epoch 9:
+Train -> Loss: 0.0435 | Acc: 0.9901 | F1: 0.9763
+Val   -> Loss: 0.2399 | Acc: 0.9645 | F1: 0.9275
+Save model as ep9_f1_0.9275.pth? (y/n): n
+Model not saved for this epoch.
+
+Epoch 10:
+Train -> Loss: 0.0095 | Acc: 0.9969 | F1: 0.9924
+Val   -> Loss: 0.2630 | Acc: 0.9668 | F1: 0.9314
+Save model as ep10_f1_0.9314.pth? (y/n): n
+Model not saved for this epoch.
+
+Epoch 11:
+Train -> Loss: 0.0159 | Acc: 0.9969 | F1: 0.9924
+Val   -> Loss: 0.2407 | Acc: 0.9645 | F1: 0.9268
+Save model as ep11_f1_0.9268.pth? (y/n): n
+Model not saved for this epoch.
+
+Epoch 12:
+Train -> Loss: 0.0166 | Acc: 0.9969 | F1: 0.9924
+Val   -> Loss: 0.2732 | Acc: 0.9692 | F1: 0.9360
+Save model as ep12_f1_0.9360.pth? (y/n): n
+Model not saved for this epoch.
+
+Epoch 13:
+Train -> Loss: 0.0160 | Acc: 0.9958 | F1: 0.9899
+Val   -> Loss: 0.2077 | Acc: 0.9716 | F1: 0.9423
+Save model as ep13_f1_0.9423.pth? (y/n): n
+Model not saved for this epoch.
+
+Epoch 14:
+Train -> Loss: 0.0067 | Acc: 0.9984 | F1: 0.9962
+Val   -> Loss: 0.1751 | Acc: 0.9716 | F1: 0.9423
+Save model as ep14_f1_0.9423.pth? (y/n): n
+Model not saved for this epoch.
+
+Epoch 15:
+Train -> Loss: 0.0177 | Acc: 0.9958 | F1: 0.9899
+Val   -> Loss: 0.1463 | Acc: 0.9739 | F1: 0.9479
+Save model as ep15_f1_0.9479.pth? (y/n): n
+Model not saved for this epoch.
+
+Epoch 16:
+Train -> Loss: 0.0260 | Acc: 0.9953 | F1: 0.9887
+Val   -> Loss: 0.2027 | Acc: 0.9668 | F1: 0.9320
+Save model as ep16_f1_0.9320.pth? (y/n): n
+Model not saved for this epoch.
+
+Epoch 17:
+Train -> Loss: 0.0294 | Acc: 0.9933 | F1: 0.9837
+Val   -> Loss: 0.4691 | Acc: 0.9573 | F1: 0.9100
+Save model as ep17_f1_0.9100.pth? (y/n): n
+Model not saved for this epoch.
+
+Epoch 18:
+Train -> Loss: 0.0091 | Acc: 0.9974 | F1: 0.9937
+Val   -> Loss: 0.4551 | Acc: 0.9621 | F1: 0.9184
+Save model as ep18_f1_0.9184.pth? (y/n): n
+Model not saved for this epoch.
+
+Epoch 19:
+Train -> Loss: 0.0249 | Acc: 0.9943 | F1: 0.9861
+Val   -> Loss: 0.2983 | Acc: 0.9621 | F1: 0.9200
+Save model as ep19_f1_0.9200.pth? (y/n): n
+Model not saved for this epoch.
+
+Epoch 20:
+Train -> Loss: 0.0150 | Acc: 0.9958 | F1: 0.9899
+Val   -> Loss: 0.2231 | Acc: 0.9692 | F1: 0.9384
+Save model as ep20_f1_0.9384.pth? (y/n): n
+Model not saved for this epoch.
