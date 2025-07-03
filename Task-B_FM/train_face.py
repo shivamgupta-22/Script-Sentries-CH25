@@ -29,7 +29,7 @@ from torch.utils.data import Dataset, DataLoader
 import timm
 
 from sklearn.metrics import accuracy_score, precision_recall_fscore_support
-from torch.amp import autocast, GradScaler
+from torch.cuda.amp import autocast, GradScaler
 import warnings
 warnings.filterwarnings("ignore")
 
@@ -256,7 +256,7 @@ def train_epoch(model, loader, optimizer, criterion, scaler):
     for a, p, n in tqdm(loader, desc="Training"):
         a, p, n = a.to(device), p.to(device), n.to(device)
         optimizer.zero_grad()
-        with autocast("cuda"):  # automatic mixed precision
+        with autocast():  # automatic mixed precision
             ea, ep, en = model(a), model(p), model(n)
             pos_dist = F.pairwise_distance(ea, ep)
             neg_dist = F.pairwise_distance(ea, en)
@@ -341,7 +341,7 @@ if __name__ == "__main__":
 
     optimizer = torch.optim.Adam(model.parameters(), lr=1e-3)
     criterion = nn.TripletMarginLoss(margin=0.3)
-    scaler = GradScaler("cuda")
+    scaler = GradScaler()
 
     log_and_print("\nStarting training...")
     for epoch in range(EPOCHS):

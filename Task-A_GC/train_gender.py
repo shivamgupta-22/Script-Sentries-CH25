@@ -31,6 +31,7 @@ import timm
 from tqdm import tqdm
 from sklearn.metrics import f1_score
 from torch.utils.tensorboard import SummaryWriter
+from torch.cuda.amp import GradScaler, autocast
 
 # Paths and logging
 # -----------------
@@ -208,7 +209,7 @@ def train_model(model, train_loader, val_loader, device, num_epochs=20):
     criterion = nn.BCEWithLogitsLoss(pos_weight=pos_weight)
     optimizer = optim.AdamW(model.parameters(), lr=1e-4, weight_decay=1e-5)
     scheduler = torch.optim.lr_scheduler.CosineAnnealingWarmRestarts(optimizer, T_0=5, T_mult=2)
-    scaler = torch.amp.GradScaler("cuda")
+    scaler = GradScaler()
     writer = SummaryWriter()  # for TensorBoard logging
 
     for epoch in range(num_epochs):
@@ -219,7 +220,7 @@ def train_model(model, train_loader, val_loader, device, num_epochs=20):
         for images, labels in tqdm(train_loader, desc=f"Epoch {epoch+1}/{num_epochs}"):
             images, labels = images.to(device), labels.to(device)
             optimizer.zero_grad()
-            with torch.amp.autocast("cuda"):
+            with autocast():
                 outputs = model(images).squeeze()
                 # compute BCE loss
                 loss = criterion(outputs, labels)
@@ -309,3 +310,4 @@ if __name__ == "__main__":
     log_print("\nStarting training...")
     train_model(model, train_loader, val_loader, device)
     log_file.close()
+    
