@@ -277,13 +277,13 @@ cd Script-Sentries-CH25
 # Create a Python 3.11 environment
 conda create -n comsys python=3.11
 conda activate comsys
-# OR using venv
-python3.11 -m venv venv
-source venv/bin/activate
+# OR using venv with Python 3.11 on Windows
+python -m venv venv
+venv\Scripts\activate
 
 # Install dependencies
 pip install torch==2.0.1 torchvision==0.15.2 --index-url https://download.pytorch.org/whl/cu118
-pip install -r requirements.txt --no-deps
+pip install -r requirements.txt
 
 # Check GPU availability
 python check_cuda.py
