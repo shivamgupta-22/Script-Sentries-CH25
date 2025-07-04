@@ -259,6 +259,7 @@ Threshold Used      : 0.80
 │  ├── train_face.py
 │  └── training_stats.txt
 │  
+├── check_cuda.py
 ├── requirements.txt
 ├── README.md
 └── Summary.pdf
@@ -281,7 +282,11 @@ python3.11 -m venv venv
 source venv/bin/activate
 
 # Install dependencies
-pip install -r requirements.txt
+pip install torch==2.0.1 torchvision==0.15.2 --index-url https://download.pytorch.org/whl/cu118
+pip install -r requirements.txt --no-deps
+
+# Check GPU availability
+python check_cuda.py
 ```
 
 ---
